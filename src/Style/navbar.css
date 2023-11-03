@@ -29,16 +29,17 @@
   padding: 4px 10px; /* Add padding for better visual appearance */
   cursor: pointer;
   background: url("");
+  color: white;
 }
 
 .linkstyle:hover {
-  color: white; /* Change color on hover */
+  color: black; /* Change color on hover */
   text-decoration: underline;
 }
 
 .linkstyle {
   transition: color 0.3s; /* Add a smooth color transition effect */
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -46,4 +47,5 @@
   /* Styles for the navbar when scrolled */
   height: 4rem; /* Smaller height */
   background-color: rgba(237, 20, 19, 0.8); /* Transparent background color */
+  transition-duration: 0.5s;
 }

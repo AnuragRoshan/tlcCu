@@ -141,3 +141,51 @@
   .diagonal-div {
   }
 }
+/* Add this part to your existing CSS */
+.chm-top {
+  padding: 3rem;
+  background-color: #ed1413;
+  font-family: Montserrat;
+}
+
+.chm-info {
+  display: flex;
+  align-items: center; /* Vertically center the contents */
+}
+
+.chm-head {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+}
+
+.chm-msg {
+  flex: 4;
+  font-size: 0.9rem;
+  color: white;
+  padding: 1rem;
+  border: 1px solid whitesmoke;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.chm-img {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='10 20 190 130'%3E%3Cpath fill='%23F2F4F8' d='M32.1,-56.2C37.8,-46.3,36.1,-31,42.4,-18.9C48.7,-6.8,63.1,2.2,66.1,12.4C69.1,22.5,60.7,34,52.5,47.9C44.2,61.9,36.1,78.5,24.9,79.2C13.8,79.8,-0.4,64.7,-15.8,58.1C-31.2,51.6,-47.8,53.7,-52.3,46.5C-56.8,39.2,-49.3,22.6,-49.2,8.4C-49.2,-5.8,-56.7,-17.5,-56.3,-28.7C-55.9,-39.9,-47.6,-50.6,-36.9,-58.2C-26.2,-65.8,-13.1,-70.5,0,-70.6C13.2,-70.6,26.4,-66.1,32.1,-56.2Z' transform='translate(100 100)'%3E%3C/path%3E%3C/svg%3E")
+    center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chm-img > img {
+  width: 100%;
+  height: auto; /* Set the height to auto for responsive image resizing */
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+  align-items: center; /* Vertically center the image */
+  margin-top: 0rem;
+}

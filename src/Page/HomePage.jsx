@@ -1,5 +1,6 @@
 import React from "react";
 import "../Style/home.css";
+import Chancelormsg from "../Components/Homepage.jsx/Chancelormsg";
 
 const HomePage = () => {
   return (
@@ -30,6 +31,9 @@ const HomePage = () => {
           Teaching & <br />{" "}
           <span className="text-over-red-below">Learning Center</span>
         </h1>
+      </div>
+      <div>
+        <Chancelormsg />
       </div>
     </>
   );
