@@ -1,0 +1,49 @@
+.navbar {
+  background-color: #ed1413; /* Set your desired background color */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 0.5rem;
+  /* flex-direction: row; */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  transition-duration: 0.5s;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row; /* Align elements vertically */
+  align-items: flex-start; /* Align elements to the start (left) */
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black; /* Text color */
+  font-size: 1rem; /* Text size */
+  margin: 8px 0; /* Add spacing between items */
+  padding: 4px 10px; /* Add padding for better visual appearance */
+  cursor: pointer;
+  background: url("");
+}
+
+.linkstyle:hover {
+  color: white; /* Change color on hover */
+  text-decoration: underline;
+}
+
+.linkstyle {
+  transition: color 0.3s; /* Add a smooth color transition effect */
+  color: black;
+  text-decoration: none;
+}
+
+.navbar.scrolled {
+  /* Styles for the navbar when scrolled */
+  height: 4rem; /* Smaller height */
+  background-color: rgba(237, 20, 19, 0.8); /* Transparent background color */
+}

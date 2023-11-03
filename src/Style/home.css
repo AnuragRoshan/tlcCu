@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Nunito+Sans:opsz@6..12&display=swap");
+
+.diagonal-div {
+  width: 100%;
+  height: 100vh;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23ED1413' d='M29.4,-40.4C42.8,-30.8,61.3,-28.4,65.3,-20.2C69.3,-12.1,58.8,1.8,50.1,12.5C41.5,23.3,34.8,31,26.7,42.6C18.7,54.3,9.4,70,-2.5,73.4C-14.3,76.8,-28.6,67.9,-34.8,55.6C-40.9,43.4,-39,27.7,-42.7,14.3C-46.4,1,-55.8,-10.1,-57,-22.2C-58.2,-34.4,-51.2,-47.6,-40.3,-57.9C-29.4,-68.2,-14.7,-75.7,-3.3,-71.1C8.1,-66.5,16.1,-49.9,29.4,-40.4Z' transform='translate(155 105)'%3E%3C/path%3E%3C/svg%3E"),
+    url("https://github.com/AnuragRoshan/images/blob/main/soft-background.jpg?raw=true");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  position: relative;
+}
+
+.image-over-red {
+  position: absolute;
+  /* margin-right: 10rem; */
+  top: 4rem;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.logo-over-red {
+  position: absolute;
+  /* margin-right: 10rem; */
+  top: 0;
+  left: 0;
+  margin-top: 7rem;
+  margin-left: 1rem;
+  width: 13rem;
+  height: 5rem;
+  object-fit: fill;
+  z-index: 1;
+  padding: 1rem;
+}
+.naac-logo-over-red {
+  position: absolute;
+  /* margin-right: 10rem; */
+  top: 0;
+  left: 0;
+  margin-top: 8rem;
+  margin-left: 15rem;
+  width: 8rem;
+  height: 3rem;
+  object-fit: fill;
+  z-index: 1;
+  padding: 1rem;
+}
+.tlc-logo-over-red {
+  position: absolute;
+  /* margin-right: 10rem; */
+  top: 0;
+  left: 0;
+  border-radius: 0.2rem;
+  margin-top: 8rem;
+  margin-left: 26rem;
+  width: 7rem;
+  height: 3rem;
+  object-fit: fill;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.text-over-red {
+  position: absolute;
+  top: 40%;
+  left: 1%;
+}
+
+.text-over-red-head {
+  font-size: 4rem;
+  z-index: 2;
+  line-height: 3.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.text-over-red-desc {
+  font-family: Montserrat;
+  font-weight: 500;
+  height: 3rem;
+  font-size: 12px;
+  top: 10px; /* Add 10px of space between red-desc and red-head */
+}
+
+.text-over-red-below {
+  color: #ed1413;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-over-red {
+    top: 20%; /* Adjust for smaller screens */
+  }
+
+  .text-over-red-head {
+    font-size: 3rem; /* Reduce font size for smaller screens */
+    line-height: 2.9rem;
+    color: black; /* Change text color to black for smaller screens */
+  }
+
+  .text-over-red-desc {
+    font-size: 10px; /* Reduce font size for smaller screens */
+    top: 5px; /* Adjust the spacing for smaller screens */
+  }
+
+  .diagonal-div {
+    background: none; /* Remove the diagonal background for smaller screens */
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, transparent 50%, transparent 50%),
+      url("https://github.com/AnuragRoshan/images/blob/main/soft-background.jpg?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  .image-over-red {
+    display: none; /* Hide the image for smaller screens */
+  }
+  .text-over-red {
+    position: absolute;
+    top: 25%;
+    /* left: 0%; */
+  }
+  .text-over-red-head {
+    font-size: 3rem; /* Reduce font size for smaller screens */
+    line-height: 2.9rem;
+    color: black; /* Change text color to black for smaller screens */
+    text-align: center;
+  }
+}
+@media (max-width: 1279px) {
+  .text-over-red-below {
+    color: black; /* Change text color to black for smaller screens */
+  }
+}
+@media (max-width: 631px) {
+  .image-over-red,
+  .diagonal-div {
+  }
+}
