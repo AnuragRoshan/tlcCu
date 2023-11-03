@@ -1,6 +1,9 @@
 import React from "react";
 import "../Style/home.css";
-import Chancelormsg from "../Components/Homepage.jsx/Chancelormsg";
+import Chancelormsg from "../Components/Homepage/Chancelormsg";
+import Greatteacher from "../Components/Homepage/Greatteacher";
+import Teacherlearning from "../Components/Homepage/Teacherlearning";
+import Map from "../Components/Homepage/Map";
 
 const HomePage = () => {
   return (
@@ -20,7 +23,7 @@ const HomePage = () => {
         className="naac-logo-over-red"
       ></img>
       <img
-        src="https://www.cuchd.in/tlc/assets/uploads/tlc-logo.png"
+        src="https://tlccu.onrender.com/assets/uploads/TLC%20Logo%20(5).png"
         className="tlc-logo-over-red"
       ></img>
       <div className="text-over-red">
@@ -34,6 +37,15 @@ const HomePage = () => {
       </div>
       <div>
         <Chancelormsg />
+      </div>
+      <div>
+        <Greatteacher />
+      </div>
+      <div>
+        <Teacherlearning />
+      </div>
+      <div>
+        <Map />
       </div>
     </>
   );

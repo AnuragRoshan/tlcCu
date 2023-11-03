@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter as Router, Navigate } from "react-router-d
 import HomePage from './Page/HomePage';
 import DetailPage from './Page/DetailPage';
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 
 
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/:id" element={<DetailPage />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
