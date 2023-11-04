@@ -8,6 +8,10 @@ const about = {
         title: "Mission: How we plan to proceed",
         data: `To provide leadership support and resources for continuous professional development of academic, technical, administrative and supporting staff and establishing a culture and ecosystem for sustained innovative practices in the teaching-learning process at the University level.`,
     },
+    vision: {
+        title: "Vision: An insight into the greater objective",
+        data: "To establish an ecosystem that facilitates continuous and sustained professional development and engagement of faculty members for adopting best and innovative teaching and learning practices.",
+    },
     goals: {
         title: "Goals",
         data: [

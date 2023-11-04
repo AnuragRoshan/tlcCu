@@ -1,3 +1,55 @@
 .sidemenu-top {
   padding: 2rem;
+  font-family: Montserrat;
+  height: max-content;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 0px 12px -3px rgba(0, 0, 0, 10.75);
+  /* border-right: 1px solid grey;
+   */
+}
+
+.sideMenu-item {
+  height: max-content;
+  gap: 8px;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 100ms;
+  font-size: medium;
+  display: flex;
+}
+.sidebar-inner-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu-item {
+  height: fit-content;
+  border-bottom: solid 1px black;
+  gap: 8px;
+  align-items: center;
+  font-weight: 500;
+  font-size: medium;
+  margin-block: 1rem;
+  padding: 0.4rem;
+  display: flex;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    #ed1413 50%,
+    #ed1413 100%
+  );
+  background-size: 100% 200%;
+  background-position: 0 0;
+  transition: background-position 0.4s;
+  cursor: pointer;
+  padding-inline: 10px;
+}
+
+.menu-item:hover {
+  background-position: 0 100%;
+  color: white;
+  border-radius: 0.4rem;
 }

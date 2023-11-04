@@ -35,16 +35,32 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="linkstyle" to="/homeee">
+          <Link className="linkstyle" to="/about">
             {" "}
             AboutUs
           </Link>
         </li>
-        <li className="nav-item">Courses </li>
+        <li className="nav-item">
+          <Link className="linkstyle" to="/course">
+            {" "}
+            Courses
+          </Link>
+        </li>
         <li className="nav-item">Resources </li>
-        <li className="nav-item">Research </li>
+        <li className="nav-item">
+          <Link className="linkstyle" to="/research">
+            {" "}
+            Research
+          </Link>
+        </li>
         <li className="nav-item">Events</li>
-        <li className="nav-item">Awards</li>
+        <li className="nav-item">
+          <Link className="linkstyle" to="/awards">
+            {" "}
+            Awards
+          </Link>
+        </li>
+
         <li className="nav-item">Partnership</li>
         <li className="nav-item">Journal</li>
         <li className="nav-item">Newsletter</li>
