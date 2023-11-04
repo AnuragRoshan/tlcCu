@@ -1,6 +1,7 @@
 .about-top {
   display: flex;
   flex-direction: row;
+  background-color: #f8fafc;
 }
 /* vertical-line.css */
 .vertical-line {
@@ -14,18 +15,26 @@
   border-radius: 1rem;
   box-shadow: 1px 0px 12px -3px rgba(0, 0, 0, 10.75);
   font-family: Montserrat;
+  background-color: #f8fafc;
 }
 .about-head {
   font-size: 28px;
   font-weight: 500;
 }
 .about-desc {
-  color: rgb(57, 57, 57);
+  color: rgb(87, 87, 87);
+  margin-top: 0.5rem;
+}
+li {
+  color: rgb(87, 87, 87);
 }
 .about-main-inner {
   margin: 2rem;
 }
 
 .about-element {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
   margin-top: 2.5rem;
 }

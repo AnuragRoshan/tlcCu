@@ -5,6 +5,7 @@
   margin: 1rem;
   border-radius: 1rem;
   box-shadow: 1px 0px 12px -3px rgba(0, 0, 0, 10.75);
+  background-color: white;
   /* border-right: 1px solid grey;
    */
 }
@@ -38,8 +39,8 @@
     to bottom,
     transparent 0%,
     transparent 50%,
-    #ed1413 50%,
-    #ed1413 100%
+    #f8fafc 50%,
+    #f8fafc 100%
   );
   background-size: 100% 200%;
   background-position: 0 0;
@@ -50,6 +51,6 @@
 
 .menu-item:hover {
   background-position: 0 100%;
-  color: white;
+  color: black;
   border-radius: 0.4rem;
 }
