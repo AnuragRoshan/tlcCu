@@ -4,6 +4,7 @@ import HomePage from './Page/HomePage';
 import DetailPage from './Page/DetailPage';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import About from './Page/About';
 
 
 
@@ -14,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/:id" element={<DetailPage />} />
+          <Route exact path="/about" element={<About />} />
         </Routes>
         <Footer />
       </Router>
