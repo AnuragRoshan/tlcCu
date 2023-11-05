@@ -14,7 +14,7 @@
 .image-over-red {
   position: absolute;
   /* margin-right: 10rem; */
-  top: 9rem;
+  top: 11rem;
   right: 0;
   width: 50%;
   height: 100%;
@@ -64,7 +64,7 @@
 
 .text-over-red {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 5%;
 }
 
@@ -258,14 +258,13 @@
   height: 21rem;
   margin: 1rem;
   padding: 1rem;
-  /* box-shadow: 1px 1px 5px -3px rgba(0, 0, 0, 10.75); */
   /* background: url("https://github.com/AnuragRoshan/images/blob/main/soft-background.jpg?raw=true"); */
   background-color: #f8fafc;
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   transition: 300ms;
-  border-radius: 1rem;
+  border-radius: 0.1rem;
 }
 
 .tchrlrn-card > img {
@@ -274,6 +273,8 @@
 }
 .tchrlrn-card:hover {
   background-color: #ffd9d9;
+  box-shadow: 1px 1px 5px -3px rgba(0, 0, 0, 10.75);
+  cursor: pointer;
 }
 
 .tchrlrn-title {

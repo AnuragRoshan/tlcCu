@@ -20,7 +20,7 @@
   transition: 100ms;
   font-size: medium;
   display: flex;
-  font-size: small;
+  /* font-size: small; */
 }
 .sidebar-inner-body {
   display: flex;

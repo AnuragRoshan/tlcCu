@@ -2,8 +2,14 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div>
-      <div style={{ padding: "1rem", height: "5rem", display: "flex" }}>
+    <div style={{ position: "sticky" }}>
+      <div
+        style={{
+          padding: "1rem",
+          height: "5rem",
+          display: "flex",
+        }}
+      >
         <div>
           <img
             src="https://www.cuchd.in/tlc/assets/uploads/cu-logo.png"

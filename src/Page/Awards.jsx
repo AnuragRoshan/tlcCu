@@ -1,27 +1,32 @@
 import React from "react";
 import Sidemenu from "../Components/Sidemenu";
 import awards from "../Data/awards";
+import Flowbanner from "../Components/Flowbanner";
 
 const Awards = () => {
   const sections = Object.keys(awards);
   const section = ["TLC Awards", "Research Grant"];
 
+  const page = "Awards";
   return (
-    <div className="about-top">
-      <div style={{ flex: "2" }}>
-        <Sidemenu menu={section} />
-      </div>
-      <div className="about-main-top">
-        <div className="about-main-inner">
-          {sections.map((section, index) => (
-            <div id={section} className="about-element" key={index}>
-              <div className="about-head">{awards[section].title}</div>
-              <div className="about-desc">{awards[section].data}</div>
-            </div>
-          ))}
+    <>
+      <Flowbanner name={page} />
+      <div className="about-top">
+        <div style={{ flex: "2" }}>
+          <Sidemenu menu={section} />
+        </div>
+        <div className="about-main-top">
+          <div className="about-main-inner">
+            {sections.map((section, index) => (
+              <div id={section} className="about-element" key={index}>
+                <div className="about-head">{awards[section].title}</div>
+                <div className="about-desc">{awards[section].data}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

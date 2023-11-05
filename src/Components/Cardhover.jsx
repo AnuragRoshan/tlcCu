@@ -25,7 +25,7 @@ const Cardhover = (props) => {
                 <div
                   style={{
                     textAlign: "center",
-                    top: "8rem",
+                    top: "8 rem",
                     paddingBlockStart: "1rem",
                     // position: "absolute",
                   }}

@@ -12,6 +12,7 @@ import Events from './Page/Events';
 import Banner from './Components/Banner';
 import Journal from './Page/Journal';
 import Contactus from './Page/Contactus';
+import Flowbanner from './Components/Flowbanner';
 
 
 

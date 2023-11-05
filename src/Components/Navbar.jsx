@@ -1,83 +1,138 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; // Import useLocation from react-router-dom
 import "../Style/navbar.css";
-
+// import Banner from "../Components/Banner";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 867);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation(); // Get the current location
 
-  // Add a scroll event listener to the window
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 867);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        // When scrolled down, set the navbar to be smaller and transparent
         setScrolled(true);
       } else {
-        // When at the top, reset the navbar styles
         setScrolled(false);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    if (menuOpen) {
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <ul className="nav-list">
-        <li className="nav-item">
-          <Link className="linkstyle" to="/">
-            {" "}
+      {isMobile ? (
+        <div className="menu-icon" onClick={toggleMenu}>
+          <div className={`icon ${menuOpen ? "open" : ""}`}>
+            <div>
+              <span
+                class="material-symbols-outlined"
+                style={{ color: "white" }}
+              >
+                menu
+              </span>
+            </div>
+          </div>
+        </div>
+      ) : null}
+      <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${location.pathname === "/" ? "active" : ""}`}
+            to="/"
+          >
             Home
           </Link>
         </li>
-        <li className="nav-item">
-          <Link className="linkstyle" to="/about">
-            {" "}
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${
+              location.pathname === "/about" ? "active" : ""
+            }`}
+            to="/about"
+          >
             AboutUs
           </Link>
         </li>
-        <li className="nav-item">
-          <Link className="linkstyle" to="/course">
-            {" "}
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${
+              location.pathname === "/course" ? "active" : ""
+            }`}
+            to="/course"
+          >
             Courses
           </Link>
         </li>
-        <li className="nav-item">Resources </li>
-        <li className="nav-item">
-          <Link className="linkstyle" to="/research">
-            {" "}
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${
+              location.pathname === "/research" ? "active" : ""
+            }`}
+            to="/research"
+          >
             Research
           </Link>
         </li>
-        <li className="nav-item">
-          <Link className="linkstyle" to="/events">
-            {" "}
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${
+              location.pathname === "/events" ? "active" : ""
+            }`}
+            to="/events"
+          >
             Events
           </Link>
         </li>
-        <li className="nav-item">
-          <Link className="linkstyle" to="/awards">
-            {" "}
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${
+              location.pathname === "/awards" ? "active" : ""
+            }`}
+            to="/awards"
+          >
             Awards
           </Link>
         </li>
-
         <li className="nav-item">Partnership</li>
-        {/* <li className="nav-item">Journal</li> */}
-        <li className="nav-item">
-          <Link className="linkstyle" to="/journal">
-            {" "}
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${
+              location.pathname === "/journal" ? "active" : ""
+            }`}
+            to="/journal"
+          >
             Journal
           </Link>
         </li>
-        <li className="nav-item">Newsletter</li>
-        <li className="nav-item">
-          <Link className="linkstyle" to="/contact">
-            {" "}
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${
+              location.pathname === "/contact" ? "active" : ""
+            }`}
+            to="/contact"
+          >
             Contact Us
           </Link>
         </li>

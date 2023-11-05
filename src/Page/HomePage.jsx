@@ -14,7 +14,7 @@ const HomePage = () => {
         alt="Image over red side"
         className="image-over-red"
       />
-      <img
+      {/* <img
         src="https://www.cuchd.in/tlc/assets/uploads/cu-logo.png"
         className="logo-over-red"
       ></img>
@@ -25,7 +25,7 @@ const HomePage = () => {
       <img
         src="https://tlccu.onrender.com/assets/uploads/TLC%20Logo%20(5).png"
         className="tlc-logo-over-red"
-      ></img>
+      ></img> */}
       <div className="text-over-red">
         <h1 className="text-over-red-head">
           <div className="text-over-red-desc">
