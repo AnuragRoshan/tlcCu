@@ -1,8 +1,9 @@
 import React from "react";
+import "../Style/navbar.css";
 
 const Banner = () => {
   return (
-    <div style={{ position: "sticky" }}>
+    <div className="banner-top" style={{ position: "sticky" }}>
       <div
         style={{
           padding: "1rem",
