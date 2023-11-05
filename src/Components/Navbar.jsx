@@ -53,7 +53,12 @@ const Navbar = () => {
             Research
           </Link>
         </li>
-        <li className="nav-item">Events</li>
+        <li className="nav-item">
+          <Link className="linkstyle" to="/events">
+            {" "}
+            Events
+          </Link>
+        </li>
         <li className="nav-item">
           <Link className="linkstyle" to="/awards">
             {" "}
@@ -62,9 +67,20 @@ const Navbar = () => {
         </li>
 
         <li className="nav-item">Partnership</li>
-        <li className="nav-item">Journal</li>
+        {/* <li className="nav-item">Journal</li> */}
+        <li className="nav-item">
+          <Link className="linkstyle" to="/journal">
+            {" "}
+            Journal
+          </Link>
+        </li>
         <li className="nav-item">Newsletter</li>
-        <li className="nav-item">Contact Us</li>
+        <li className="nav-item">
+          <Link className="linkstyle" to="/contact">
+            {" "}
+            Contact Us
+          </Link>
+        </li>
         <li className="nav-item">Register</li>
       </ul>
     </div>

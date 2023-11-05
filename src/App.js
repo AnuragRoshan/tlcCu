@@ -8,6 +8,10 @@ import About from './Page/About';
 import Course from './Page/Course';
 import Research from './Page/Research';
 import Awards from './Page/Awards';
+import Events from './Page/Events';
+import Banner from './Components/Banner';
+import Journal from './Page/Journal';
+import Contactus from './Page/Contactus';
 
 
 
@@ -15,6 +19,8 @@ function App() {
   return (
     <>
       <Router>
+        <Banner />
+
         <Navbar />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
@@ -22,6 +28,9 @@ function App() {
           <Route exact path="/course" element={<Course />} />
           <Route exact path="/research" element={<Research />} />
           <Route exact path="/awards" element={<Awards />} />
+          <Route exact path="/events" element={<Events />} />
+          <Route exact path="/journal" element={<Journal />} />
+          <Route exact path="/contact" element={<Contactus />} />
         </Routes>
         <Footer />
       </Router>

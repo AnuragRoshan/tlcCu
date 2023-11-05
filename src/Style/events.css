@@ -1,0 +1,21 @@
+.events-top {
+  padding: 3rem;
+  font-family: Montserrat;
+}
+.events-card-top {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; /* Vertically center elements */
+  justify-content: center; /* Horizontally center elements */
+}
+
+.events-head {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.events-card {
+  margin-left: 2rem;
+}
