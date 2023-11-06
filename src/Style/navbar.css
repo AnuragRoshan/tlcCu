@@ -76,18 +76,24 @@
 }
 
 .linkstyle:hover {
-  color: black; /* Change color on hover */
-  text-decoration: underline;
+  /* border-bottom: 0.3rem solid white; */
+  background-color: white;
+  color: #ed1413;
 }
 
 .linkstyle {
+  padding: 0.4rem;
   transition: color 0.3s; /* Add a smooth color transition effect */
   color: white;
   text-decoration: none;
+  /* padding-bottom: 0.2rem; */
 }
 .linkstyle.active {
-  text-decoration: underline;
-  color: black;
+  /* text-decoration: underline; */
+  /* border-bottom: 0.3rem solid white; */
+  background-color: white;
+  color: #ed1413;
+  /* color: black; */
 }
 
 .navbar.scrolled {

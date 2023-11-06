@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Style/sidemenu.css";
 
 const Sidemenu = (props) => {
+  const [selectedItem, setSelectedItem] = useState(null);
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "center" });
+      setSelectedItem(sectionId);
     }
   };
 
@@ -14,9 +17,11 @@ const Sidemenu = (props) => {
       <div className="sidemenu-inner">
         {props.menu.map((item, index) => (
           <div
-            className="menu-item"
+            className={`menu-item ${
+              selectedItem === item.toLowerCase() ? "selected" : ""
+            }`}
             key={index}
-            onClick={() => scrollToSection(item.toLowerCase())}
+            onClick={() => scrollToSection(index)}
           >
             <div className="sideMenu-item">
               <div>{item}</div>

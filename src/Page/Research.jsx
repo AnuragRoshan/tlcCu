@@ -26,7 +26,7 @@ const Research = () => {
         <div className="about-main-top">
           <div className="about-main-inner">
             {sections.map((section, index) => (
-              <div id={section} className="about-element" key={index}>
+              <div id={index} className="about-element" key={index}>
                 <div className="about-head">{research[section].title}</div>
                 <div className="about-desc">{research[section].data}</div>
                 {research[section].details && (

@@ -88,6 +88,16 @@ const Navbar = () => {
         <li className="nav-item" onClick={closeMenu}>
           <Link
             className={`linkstyle ${
+              location.pathname === "/teaching" ? "active" : ""
+            }`}
+            to="/teaching"
+          >
+            Teaching Resources
+          </Link>
+        </li>
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${
               location.pathname === "/research" ? "active" : ""
             }`}
             to="/research"
@@ -136,7 +146,16 @@ const Navbar = () => {
             Contact Us
           </Link>
         </li>
-        <li className="nav-item">Register</li>
+        <li className="nav-item" onClick={closeMenu}>
+          <Link
+            className={`linkstyle ${
+              location.pathname === "/register" ? "active" : ""
+            }`}
+            to="/register"
+          >
+            Regsiter
+          </Link>
+        </li>
       </ul>
     </div>
   );

@@ -57,3 +57,10 @@
   border-left: solid 0.5rem black;
   background-color: white;
 }
+.selected {
+  background-position: 0 100%;
+  color: black;
+  border-left: solid 0.5rem black;
+  background-color: white;
+  /* Add other styles you want for the selected item */
+}

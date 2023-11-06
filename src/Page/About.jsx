@@ -24,21 +24,21 @@ const About = () => {
         </div>
         <div className="about-main-top">
           <div className="about-main-inner">
-            <div id="introduction" className="about-element">
+            <div id="0" className="about-element">
               <div className="about-head">{about.introduction.title}</div>
               <div className="about-desc">{about.introduction.data}</div>
             </div>
 
-            <div id="mission" className="about-element">
+            <div id="1" className="about-element">
               <div className="about-head">{about.mission.title}</div>
               <div className="about-desc">{about.mission.data}</div>
             </div>
-            <div id="vision" className="about-element">
+            <div id="2" className="about-element">
               <div className="about-head">{about.vision.title}</div>
               <div className="about-desc">{about.vision.data}</div>
             </div>
 
-            <div id="goals" className="about-element">
+            <div id="3" className="about-element">
               <div className="about-head">{about.goals.title}</div>
               <ul>
                 {about.goals.data.map((goal, index) => (

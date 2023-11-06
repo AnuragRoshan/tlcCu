@@ -25,11 +25,7 @@ const Course = () => {
         <div className="about-main-top">
           <div className="about-main-inner">
             {sections.map((section, index) => (
-              <div
-                id={course[section].title}
-                className="about-element"
-                key={index}
-              >
+              <div id={index} className="about-element" key={index}>
                 <div className="about-head">{course[section].title}</div>
                 <div className="about-desc">{course[section].description}</div>
                 {course[section].hasOwnProperty("topicsCovered") && (

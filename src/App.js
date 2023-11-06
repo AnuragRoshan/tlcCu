@@ -13,6 +13,8 @@ import Banner from './Components/Banner';
 import Journal from './Page/Journal';
 import Contactus from './Page/Contactus';
 import Flowbanner from './Components/Flowbanner';
+import Register from './Page/Register';
+import Teaching from './Page/Teaching';
 
 
 
@@ -32,6 +34,8 @@ function App() {
           <Route exact path="/events" element={<Events />} />
           <Route exact path="/journal" element={<Journal />} />
           <Route exact path="/contact" element={<Contactus />} />
+          <Route exact path="/register" element={<Register />} />
+          <Route exact path="/teaching" element={<Teaching />} />
         </Routes>
         <Footer />
       </Router>
