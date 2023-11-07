@@ -38,3 +38,12 @@ li {
   /* border-radius: 1rem; */
   margin-top: 2.5rem;
 }
+
+@media (max-width: 728px) {
+  .about-top {
+    flex-direction: column;
+  }
+  .about-element {
+    text-align: center;
+  }
+}

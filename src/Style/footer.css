@@ -65,3 +65,16 @@ a {
   background-color: #f8fafc;
   padding-block-end: 1rem;
 }
+
+@media (max-width: 540px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer h4 {
+    text-align: center;
+  }
+  .footer p {
+    text-align: center;
+  }
+}

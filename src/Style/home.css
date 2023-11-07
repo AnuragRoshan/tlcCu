@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Nunito+Sans:opsz@6..12&display=swap");
 
+.spinner-3 {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, white 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, white);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 1s infinite linear;
+}
+
+@keyframes s3 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
 .diagonal-div {
   width: 100%;
   height: 100vh;
@@ -92,16 +109,21 @@
   .text-over-red {
     top: 20%; /* Adjust for smaller screens */
   }
-
-  .text-over-red-head {
-    font-size: 3rem; /* Reduce font size for smaller screens */
-    line-height: 2.9rem;
-    color: black; /* Change text color to black for smaller screens */
-  }
-
   .text-over-red-desc {
-    font-size: 10px; /* Reduce font size for smaller screens */
-    top: 5px; /* Adjust the spacing for smaller screens */
+    color: black;
+  }
+  .text-over-red-below {
+    color: #ed1413;
+  }
+  .text-over-red-head {
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: #ed1413;
+    top: 11rem;
+    text-align: center;
+    position: relative;
+    width: 100%; /* Ensure the text takes up the full width */
+    margin: 0 auto; /* Center the text horizontally */
   }
 
   .diagonal-div {
@@ -124,11 +146,26 @@
     top: 25%;
     /* left: 0%; */
   }
-  .text-over-red-head {
-    font-size: 3rem; /* Reduce font size for smaller screens */
-    line-height: 2.9rem;
-    color: black; /* Change text color to black for smaller screens */
+  .chm-info {
+    display: flex;
+    flex-direction: column; /* Vertically center the contents */
+  }
+  .chm-head {
     text-align: center;
+    font-size: medium;
+  }
+
+  .chm-msg {
+    text-align: center;
+  }
+  .grt-head {
+    text-align: center;
+  }
+  .tchrlrn-head {
+    text-align: center;
+  }
+  .chm-top {
+    padding: 0rem;
   }
 }
 @media (max-width: 1279px) {

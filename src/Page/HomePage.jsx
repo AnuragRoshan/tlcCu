@@ -8,6 +8,7 @@ import Map from "../Components/Homepage/Map";
 const HomePage = () => {
   return (
     <>
+      {/* <div class="spinner-3"></div> */}
       <div class="diagonal-div"></div>
       <img
         src="https://github.com/AnuragRoshan/images/blob/main/student3.png?raw=true"
@@ -44,9 +45,7 @@ const HomePage = () => {
       <div>
         <Teacherlearning />
       </div>
-      <div>
-        <Map />
-      </div>
+      <div>{/* <Map /> */}</div>
     </>
   );
 };

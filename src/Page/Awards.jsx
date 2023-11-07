@@ -18,7 +18,7 @@ const Awards = () => {
         <div className="about-main-top">
           <div className="about-main-inner">
             {sections.map((section, index) => (
-              <div id={section} className="about-element" key={index}>
+              <div id={index} className="about-element" key={index}>
                 <div className="about-head">{awards[section].title}</div>
                 <div className="about-desc">{awards[section].data}</div>
               </div>
