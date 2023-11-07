@@ -67,6 +67,9 @@ a {
 }
 
 @media (max-width: 540px) {
+  .foot-desc {
+    font-size: 0.6rem;
+  }
   .footer {
     flex-direction: column;
   }

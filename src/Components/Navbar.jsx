@@ -4,12 +4,12 @@ import "../Style/navbar.css";
 // import Banner from "../Components/Banner";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 867);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation(); // Get the current location
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 867);
+    setIsMobile(window.innerWidth <= 1000);
   };
 
   useEffect(() => {
@@ -43,8 +43,19 @@ const Navbar = () => {
   return (
     <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
       {isMobile ? (
-        <div className="menu-icon" onClick={toggleMenu}>
-          <div className={`icon ${menuOpen ? "open" : ""}`}>
+        <div
+          className="menu-icon"
+          style={{
+            backgroundColor: "#ed1413",
+            padding: "0.4rem",
+            borderRadius: "0.5rem",
+          }}
+          onClick={toggleMenu}
+        >
+          <div
+            style={{ position: "absolute", top: "-1rem", right: "-1rem" }}
+            className={`icon ${menuOpen ? "open" : ""}`}
+          >
             <div>
               <span
                 class="material-symbols-outlined"
@@ -125,7 +136,6 @@ const Navbar = () => {
             Awards
           </Link>
         </li>
-        <li className="nav-item">Partnership</li>
         <li className="nav-item" onClick={closeMenu}>
           <Link
             className={`linkstyle ${
@@ -153,7 +163,7 @@ const Navbar = () => {
             }`}
             to="/register"
           >
-            Regsiter
+            Register
           </Link>
         </li>
       </ul>

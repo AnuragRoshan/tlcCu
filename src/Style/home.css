@@ -31,7 +31,7 @@
 .image-over-red {
   position: absolute;
   /* margin-right: 10rem; */
-  top: 11rem;
+  top: 9rem;
   right: 0;
   width: 50%;
   height: 100%;
@@ -240,6 +240,7 @@
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
+  border-bottom: black 1px solid;
 }
 .grt-head {
   color: #ed1413;
@@ -252,6 +253,7 @@
   padding: 1rem;
   box-shadow: 1px 1px 5px -3px rgba(0, 0, 0, 10.75);
   background-color: white;
+  border-radius: 0.3rem;
 }
 
 .grt-card-box {

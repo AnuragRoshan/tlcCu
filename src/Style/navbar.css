@@ -1,8 +1,9 @@
 .banner-top {
   background: linear-gradient(to right, white 40%, #ed1413 70%);
 }
+
 .navbar {
-  height: 5rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   font-family: Montserrat;
@@ -98,7 +99,7 @@
 
 .navbar.scrolled {
   /* Styles for the navbar when scrolled */
-  height: max-content; /* Smaller height */
+  height: 2rem; /* Smaller height */
   background-color: rgba(237, 20, 19, 0.8); /* Transparent background color */
   transition-duration: 0.5s;
 }
@@ -114,7 +115,7 @@
   padding: 0;
   flex-direction: column;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .menu-icon {
     display: block;
   }
@@ -127,6 +128,10 @@
   }
   .logo-3 {
     display: none;
+  }
+  .navbar {
+    /* background-color: transparent; */
+    /* display: none; */
   }
 }
 

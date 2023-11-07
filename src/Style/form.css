@@ -1,35 +1,39 @@
-.form-label {
-  padding: 0.5rem 0.5rem 0.5rem 0;
-  margin-top: 1rem;
+.form-inner {
+  margin-inline: 14rem;
+  margin-block: 2rem;
+  background-color: #f8fafc;
+  padding: 2rem;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.4);
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
 }
 
+.form-top {
+}
+
+input,
 select {
-  width: "5rem ";
-  border: none;
-  outline: none; /* Remove the outline (usually a blue border) when input is focused */
+  border: 1px solid #ccc;
+  outline: none;
+  margin-top: 0.8rem;
   padding: 0.5rem;
   font-size: 1rem;
   font-family: Montserrat;
+  border-radius: 0.3rem;
 }
 input {
-  border: none;
-  outline: none; /* Remove the outline (usually a blue border) when input is focused */
-  padding: 0.5rem;
-  font-size: 1rem;
-  font-family: Montserrat;
-  width: 40rem;
+  width: 60%;
 }
 
-/* Style the input when focused (optional) */
-input:focus {
-  /* You can customize the styles for focused input here */
-  border: none; /* Remove the border on focus, or add your own styling */
-  /* Add any other focused styles you prefer */
-}
-.form-submit {
+.form-label {
   margin-top: 1rem;
-  padding-block: 0.5rem;
-  padding-inline: 1.5rem;
+}
+
+.form-submit,
+.form-reset {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
   font-size: 1rem;
   font-family: Montserrat;
   background-color: rgb(249, 49, 49);
@@ -37,17 +41,43 @@ input:focus {
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .form-reset {
-  cursor: pointer;
-  margin: 1rem;
-  padding-block: 0.5rem;
-  padding-inline: 1.5rem;
-  font-size: 1rem;
-  font-family: Montserrat;
   background-color: rgb(97, 102, 252);
-  color: white;
-  border: none;
-  border-radius: 0.3rem;
+  margin-left: 1rem;
+}
+/* .form-submit, */
+.form-reset:hover {
+  /* background-color: rgb(97, 102, 252); */
+  background-color: white;
+  border: 0.1px solid rgb(97, 102, 252);
+  color: rgb(97, 102, 252);
+}
+.form-submit:hover {
+  /* background-color: rgb(97, 102, 252); */
+  background-color: white;
+  border: 0.1px solid #ed1413;
+  color: #ed1413;
+}
+.resp-div-form {
+  display: flex;
+}
+.resp-right-form {
+  margin-inline-start: 4rem;
+  width: 100%;
+  flex: 1;
+}
+
+@media (max-width: 886px) {
+  .resp-div-form {
+    flex-direction: column;
+  }
+  .resp-right-form {
+    margin-inline-start: 0;
+  }
+  .form-inner {
+    margin-inline: 0;
+  }
 }
