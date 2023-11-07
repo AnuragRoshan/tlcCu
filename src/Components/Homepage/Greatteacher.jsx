@@ -14,20 +14,24 @@ const Greatteacher = () => {
           src="https://tlccu.onrender.com/assets/uploads/Guru%20Nanak.jpg"
         />
         <Card
-          name="Guru Nanak Dev"
-          src="https://tlccu.onrender.com/assets/uploads/Guru%20Nanak.jpg"
+          name="Savitribai Phule"
+          src="https://github.com/AnuragRoshan/tlcCu/blob/main/src/Images/jbp.jpg?raw=true"
         />
         <Card
-          name="Guru Nanak Dev"
-          src="https://tlccu.onrender.com/assets/uploads/Guru%20Nanak.jpg"
+          name="Dr APJ Abdul Kalam"
+          src="https://github.com/AnuragRoshan/tlcCu/blob/main/src/Images/apj.jpg?raw=true"
         />
         <Card
-          name="Guru Nanak Dev"
-          src="https://tlccu.onrender.com/assets/uploads/Guru%20Nanak.jpg"
+          name="Dr. Sarvepalli Radhakrishnan"
+          src="https://github.com/AnuragRoshan/tlcCu/blob/main/src/Images/nnn.jpg?raw=true"
         />
         <Card
-          name="Guru Nanak Dev"
-          src="https://tlccu.onrender.com/assets/uploads/Guru%20Nanak.jpg"
+          name="Rabindranath Tagore"
+          src="https://github.com/AnuragRoshan/tlcCu/blob/main/src/Images/rnt1.jpg?raw=true"
+        />
+        <Card
+          name="Swami Vivekananda"
+          src="https://github.com/AnuragRoshan/tlcCu/blob/main/src/Images/sv.jpg?raw=true"
         />
       </div>
     </div>
