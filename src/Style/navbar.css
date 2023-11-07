@@ -128,7 +128,7 @@
   padding: 0;
   flex-direction: column;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1338px) {
   .menu-icon {
     display: block;
   }

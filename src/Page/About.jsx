@@ -3,24 +3,30 @@ import about from "../Data/about";
 import "../Style/about.css";
 import Sidemenu from "../Components/Sidemenu";
 import Flowbanner from "../Components/Flowbanner";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const About = () => {
-  const sections = [
-    "Introduction",
-    "Mission",
-    "Vision",
-    "Goals",
-    "Chancellor's Message",
-    "Team TLC",
-  ];
+  const sections = ["Introduction", "Mission", "Vision", "Goals"];
 
   const page = "About Us";
+
+  const Navigate = useNavigate();
+
   return (
     <>
       <Flowbanner name={page} />
       <div className="about-top">
         <div style={{ flex: "2" }}>
           <Sidemenu menu={sections} />
+          <div className="sidemenu-top" style={{ padding: "0 2rem 0 2rem" }}>
+            <div className="sidemenu-inner">
+              <div className="menu-item" onClick={() => Navigate("/teamtlc")}>
+                <div className="sideMenu-item">
+                  <div>Team TLC</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="about-main-top">
           <div className="about-main-inner">

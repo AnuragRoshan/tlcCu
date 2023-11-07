@@ -15,6 +15,7 @@ import Contactus from './Page/Contactus';
 import Flowbanner from './Components/Flowbanner';
 import Register from './Page/Register';
 import Teaching from './Page/Teaching';
+import Teamtlc from './Page/Teamtlc';
 
 
 
@@ -36,6 +37,7 @@ function App() {
           <Route exact path="/contact" element={<Contactus />} />
           <Route exact path="/register" element={<Register />} />
           <Route exact path="/teaching" element={<Teaching />} />
+          <Route exact path="/teamtlc" element={<Teamtlc />} />
         </Routes>
         <Footer />
       </Router>

@@ -4,12 +4,12 @@ import "../Style/navbar.css";
 // import Banner from "../Components/Banner";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1338);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation(); // Get the current location
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 1000);
+    setIsMobile(window.innerWidth <= 1338);
   };
 
   useEffect(() => {
@@ -83,7 +83,7 @@ const Navbar = () => {
             }`}
             to="/about"
           >
-            AboutUs
+            About Us
           </Link>
         </li>
         <li className="nav-item" onClick={closeMenu}>
