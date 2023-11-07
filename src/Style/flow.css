@@ -1,11 +1,14 @@
 .flow-banner {
   font-family: Montserrat;
-  position: relative;
+  /* position: relative; */
   height: 8rem; /* Set the height as needed */
   background-image: url("https://i0.wp.com/www.opindia.com/wp-content/uploads/2022/06/chandigarh.jpg?w=700&ssl=1");
   background-size: 50%; /* You can adjust the percentage as needed to zoom out the image */
   background-position: right;
   color: #fff; /* Text color */
+  position: fixed;
+  /* width: 100%; */
+  top: 9rem;
 }
 
 .gradient {

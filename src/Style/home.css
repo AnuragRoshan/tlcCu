@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Nunito+Sans:opsz@6..12&display=swap");
 
+.grt-card > a {
+  text-decoration: none;
+  color: black;
+}
+
 .spinner-3 {
   width: 50px;
   aspect-ratio: 1;
@@ -31,12 +36,12 @@
 .image-over-red {
   position: absolute;
   /* margin-right: 10rem; */
-  top: 9rem;
+  top: 7rem;
   right: 0;
   width: 50%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 0;
 }
 .logo-over-red {
   position: absolute;

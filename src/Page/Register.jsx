@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../Style/form.css"; // Make sure to adjust the path to your CSS file
 import Flowbanner from "../Components/Flowbanner";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -26,9 +28,75 @@ const Register = () => {
     console.log(formData);
   };
 
+  const checkForm = () => {
+    let isValid = true; // Assume the form is valid by default
+    const age = parseInt(formData.age, 10);
+
+    // Email Validation
+    if (formData.email === "") {
+      toastError("Email is required");
+      isValid = false;
+    } else if (!validateEmail(formData.email)) {
+      toastError("Invalid email address");
+      isValid = false;
+    }
+
+    // Age Validation
+    else if (formData.age === "") {
+      toastError("Age is required");
+      isValid = false;
+    } else if (isNaN(age) || age < 18 || age > 35) {
+      toastError("Age must be between 18 and 35");
+      isValid = false;
+    }
+
+    // Phone Number Validation
+    else if (formData.phone === "") {
+      toastError("Phone Number is required");
+      isValid = false;
+    } else if (formData.phone === "" || formData.phone.length !== 10) {
+      toastError("Phone number is required and must be 10 digits long");
+      isValid = false;
+    }
+
+    return isValid;
+  };
+
+  const validateEmail = (email) => {
+    // A simple email validation regex
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send data to the server
+    const isValid = checkForm();
+    if (isValid) {
+      toast.success("Registered Successfully", {
+        position: "top-center",
+        autoClose: 1200,
+        pauseOnHover: false,
+        pauseOnFocusLoss: false,
+        draggable: true,
+        textAlign: "center",
+      });
+      // Handle form submission, e.g., send data to the server
+      setTimeout(() => {
+        window.location.reload();
+        window.scrollTo(0, 0);
+      }, 1900);
+    }
+  };
+
+  const toastError = (message) => {
+    toast.error(message, {
+      position: "top-center",
+      autoClose: 2000, // Adjust the duration as needed
+      pauseOnHover: false,
+      pauseOnFocusLoss: false,
+      draggable: true,
+      textAlign: "center",
+    });
   };
 
   const handleReset = () => {
@@ -45,6 +113,17 @@ const Register = () => {
       institute: "",
       programme: "diploma",
     });
+    toast.warn("Form Reset Successfully", {
+      position: "top-center",
+      autoClose: 500,
+      pauseOnHover: false,
+      pauseOnFocusLoss: false,
+      draggable: true,
+      textAlign: "center",
+    });
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 500);
   };
 
   const page = "Register";
@@ -74,6 +153,7 @@ const Register = () => {
               value={formData.email}
               onChange={handleChange}
               required
+              maxLength={50}
             />
           </div>
           <div className="resp-div-form">
@@ -81,12 +161,14 @@ const Register = () => {
               <div className="form-label">Phone Number</div>
               <div className="form-input">
                 <input
-                  type="tel"
+                  type="number"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
                   required
                   style={{ width: "90%" }}
+                  inputMode="numeric"
+                  maxLength={10}
                 />
               </div>
             </div>
@@ -128,6 +210,7 @@ const Register = () => {
               name="experience"
               value={formData.experience}
               onChange={handleChange}
+              maxLength={2}
             />
           </div>
           <div className="resp-div-form">
@@ -141,6 +224,7 @@ const Register = () => {
                   onChange={handleChange}
                   required
                   style={{ width: "90%" }}
+                  maxLength={50}
                 />
               </div>
             </div>
@@ -156,6 +240,7 @@ const Register = () => {
                   onChange={handleChange}
                   required
                   style={{ width: "90%" }}
+                  maxLength={50}
                 />
               </div>
             </div>
@@ -169,6 +254,7 @@ const Register = () => {
               onChange={handleChange}
               required
               style={{ width: "90%" }}
+              maxLength={150}
             />
           </div>
           <div className="form-label">Select Programme</div>
@@ -185,12 +271,17 @@ const Register = () => {
             </select>
           </div>
           <div>
-            <button className="form-submit" type="submit">
+            <button
+              className="form-submit"
+              type="submit"
+              onClick={handleSubmit}
+            >
               Submit
             </button>
             <button className="form-reset" type="button" onClick={handleReset}>
               Reset
             </button>
+            <ToastContainer className="toastifyCss" />
           </div>
         </div>
       </div>

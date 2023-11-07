@@ -1,17 +1,25 @@
 .banner-top {
   background: linear-gradient(to right, white 40%, #ed1413 70%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Set a background color if needed */
+  z-index: 1; /* Adjust the z-index to control its stacking order */
+  /* Add any other styles you want for your banner */
 }
 
 .navbar {
-  height: 2rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   font-family: Montserrat;
-  font-size: 0.5rem;
+
   /* flex-direction: row; */
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: fixed;
+  top: 10;
+  width: 100%;
+  z-index: 1;
   transition-duration: 0.5s;
   background-color: #ed1413; /* Set your desired background color */
   /* overflow: hidden; */
@@ -69,7 +77,7 @@
 .nav-item {
   text-decoration: none;
   color: black; /* Text color */
-  font-size: 1rem; /* Text size */
+  font-size: 1.1rem; /* Text size */
   margin: 8px 0; /* Add spacing between items */
   padding: 4px 10px; /* Add padding for better visual appearance */
   cursor: pointer;
@@ -80,13 +88,16 @@
   /* border-bottom: 0.3rem solid white; */
   background-color: white;
   color: #ed1413;
+
+  padding: 0.49rem;
 }
 
 .linkstyle {
-  padding: 0.4rem;
+  padding: 0.49rem;
   transition: color 0.3s; /* Add a smooth color transition effect */
   color: white;
   text-decoration: none;
+  font-size: 1.3rem;
   /* padding-bottom: 0.2rem; */
 }
 .linkstyle.active {
@@ -94,12 +105,14 @@
   /* border-bottom: 0.3rem solid white; */
   background-color: white;
   color: #ed1413;
+  padding: 0.49rem;
   /* color: black; */
 }
 
 .navbar.scrolled {
+  /* padding: 0.399rem; */
   /* Styles for the navbar when scrolled */
-  height: 2rem; /* Smaller height */
+  height: 2.1rem; /* Smaller height */
   background-color: rgba(237, 20, 19, 0.8); /* Transparent background color */
   transition-duration: 0.5s;
 }

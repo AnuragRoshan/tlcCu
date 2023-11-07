@@ -3,7 +3,7 @@ import "../Style/flow.css"; // You'll need to create the CSS file for styling
 
 const Flowbanner = (props) => {
   return (
-    <div className="flow-banner">
+    <div className="flow-banner" style={{ position: "sticky" }}>
       <div className="gradient"></div>
       <div className="contents">
         <div className="breadcrumbs">
