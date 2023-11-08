@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  z-index: -9;
 
   padding: 0;
 
@@ -29,6 +30,7 @@ body {
 
   background: #ed1413;
   color: white;
+  z-index: -9;
 }
 
 .container .card .icon .fa {
@@ -46,6 +48,7 @@ body {
 }
 
 .container .card .slide {
+  z-index: -9;
   width: 300px;
 
   height: 200px;
@@ -55,6 +58,7 @@ body {
 
 .container .card .slide.slide1 {
   position: relative;
+  /* z-index: -9; */
 
   display: flex;
 
@@ -62,7 +66,7 @@ body {
 
   align-items: center;
 
-  z-index: 1;
+  z-index: -1;
 
   transition: 0.7s;
 
@@ -89,7 +93,6 @@ body {
   transition: 0.8s;
 
   transform: translateY(-100px);
-
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
