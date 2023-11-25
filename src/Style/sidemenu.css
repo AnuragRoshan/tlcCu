@@ -29,7 +29,7 @@
 }
 .menu-item {
   height: fit-content;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px white;
   gap: 8px;
   align-items: center;
   border-left: solid 0.5rem #f8fafc;
@@ -37,6 +37,7 @@
   margin-block: 1rem;
   padding: 0.4rem;
   display: flex;
+  color: white;
   /* background: linear-gradient(
     to bottom,
     transparent 0%,

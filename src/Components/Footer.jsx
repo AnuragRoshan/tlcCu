@@ -3,10 +3,7 @@ import "../Style/footer.css";
 
 const Footer = () => {
   return (
-    <div
-      className="foot-top"
-      style={{ margin: "3rem", fontFamily: "Montserrat" }}
-    >
+    <div className="foot-top" style={{ fontFamily: "Montserrat" }}>
       <div className="footer">
         <div className="footer-section left-section">
           <img
@@ -34,14 +31,90 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="foot-desc">
-        Chandigarh University, Punjab [CU] is the Best University in Punjab and
-        North India that offers various Undergraduate and Post graduate Courses
-        like B.Tech, BCA, BBA, HMCT, B.Com, LLB, B.Arch, MBA, M.Tech, B.Com,
-        M.Com, Journalism and MCA at an affordable fees in Chandigarh.{" "}
-        <a href=""> Apply Now </a>
-        at India's Best Private University in Punjab, Chandigarh which provides
-        top placements.
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          flexDirection: "row-reverse",
+        }}
+      >
+        <div className="foot-desc" style={{ flex: "8" }}>
+          Chandigarh University, Punjab [CU] is the Best University in Punjab
+          and North India that offers various Undergraduate and Post graduate
+          Courses like B.Tech, BCA, BBA, HMCT, B.Com, LLB, B.Arch, MBA, M.Tech,
+          B.Com, M.Com, Journalism and MCA at an affordable fees in Chandigarh.{" "}
+          <a href=""> Apply Now </a>
+          at India's Best Private University in Punjab, Chandigarh which
+          provides top placements.
+        </div>
+        <div
+          style={{
+            flex: "3",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            backgroundColor: "#2c3456",
+            color: "white",
+          }}
+        >
+          <div style={{ flex: "1", paddingBlock: "1rem" }}>
+            <span
+              className="material-symbols-outlined"
+              style={{
+                padding: "1rem",
+                backgroundColor: "white",
+                color: "black",
+                borderRadius: "1rem",
+                cursor: "pointer",
+              }}
+            >
+              phone_in_talk
+            </span>
+          </div>
+          <div style={{ flex: "1", paddingBlock: "1rem" }}>
+            <span
+              className="material-symbols-outlined"
+              style={{
+                padding: "1rem",
+                backgroundColor: "white",
+                color: "black",
+                borderRadius: "1rem",
+                cursor: "pointer",
+              }}
+            >
+              pin_drop
+            </span>
+          </div>
+          <div style={{ flex: "1", paddingBlock: "1rem" }}>
+            <span
+              style={{
+                padding: "1rem",
+                backgroundColor: "white",
+                color: "black",
+                borderRadius: "1rem",
+                cursor: "pointer",
+              }}
+              className="material-symbols-outlined"
+            >
+              mail
+            </span>
+          </div>
+          <div style={{ flex: "1", paddingBlock: "1rem" }}>
+            <span
+              style={{
+                padding: "1rem",
+                backgroundColor: "white",
+                color: "black",
+                borderRadius: "1rem",
+                cursor: "pointer",
+              }}
+              className="material-symbols-outlined"
+            >
+              play_circle
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );

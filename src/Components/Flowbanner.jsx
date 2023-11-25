@@ -13,7 +13,7 @@ const Flowbanner = (props) => {
           </a>
           &gt;&gt; {props.name}
         </div>
-        <div style={{ fontSize: "3rem" }}>{props.name}</div>
+        <div style={{ fontSize: "2.3rem" }}>{props.name}</div>
       </div>
     </div>
   );

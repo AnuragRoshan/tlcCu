@@ -41,12 +41,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
+    <div className={`navbar`}>
       {isMobile ? (
         <div
           className="menu-icon"
           style={{
-            backgroundColor: "#ed1413",
+            backgroundColor: "#2c3456",
             padding: "0.4rem",
             borderRadius: "0.5rem",
           }}
@@ -67,6 +67,7 @@ const Navbar = () => {
           </div>
         </div>
       ) : null}
+
       <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
         <li className="nav-item" onClick={closeMenu}>
           <Link

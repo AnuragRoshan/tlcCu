@@ -11,7 +11,7 @@ const HomePage = () => {
       {/* <div class="spinner-3"></div> */}
       <div class="diagonal-div"></div>
       <img
-        src="https://github.com/AnuragRoshan/images/blob/main/student3.png?raw=true"
+        src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Image over red side"
         className="image-over-red"
       />
@@ -32,8 +32,15 @@ const HomePage = () => {
           <div className="text-over-red-desc">
             FACILITATING SUSTAINED PROFESSIONAL DEVELOPMENT
           </div>
-          Teaching & <br />{" "}
-          <span className="text-over-red-below">Learning Center</span>
+          <div style={{ width: "max-content" }}>
+            Teaching & <br />{" "}
+          </div>
+          <span
+            className="text-over-red-below"
+            style={{ width: "max-content" }}
+          >
+            Learning Center
+          </span>
         </h1>
       </div>
       <div>

@@ -59,8 +59,8 @@ input {
 .form-submit:hover {
   /* background-color: rgb(97, 102, 252); */
   background-color: white;
-  border: 0.1px solid #ed1413;
-  color: #ed1413;
+  border: 0.1px solid #2c3456;
+  color: #2c3456;
 }
 .resp-div-form {
   display: flex;

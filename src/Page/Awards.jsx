@@ -12,17 +12,19 @@ const Awards = () => {
     <>
       <Flowbanner name={page} />
       <div className="about-top">
-        <div style={{ flex: "2" }}>
-          <Sidemenu menu={section} />
-        </div>
-        <div className="about-main-top">
-          <div className="about-main-inner">
-            {sections.map((section, index) => (
-              <div id={index} className="about-element" key={index}>
-                <div className="about-head">{awards[section].title}</div>
-                <div className="about-desc">{awards[section].data}</div>
-              </div>
-            ))}
+        <div className="about-top-inner">
+          <div style={{ flex: "2" }}>
+            <Sidemenu menu={section} />
+          </div>
+          <div className="about-main-top">
+            <div className="about-main-inner">
+              {sections.map((section, index) => (
+                <div id={index} className="about-element" key={index}>
+                  <div className="about-head">{awards[section].title}</div>
+                  <div className="about-desc">{awards[section].data}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

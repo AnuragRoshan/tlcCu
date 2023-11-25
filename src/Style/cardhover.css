@@ -28,7 +28,7 @@ body {
 
   height: 100%;
 
-  background: #ed1413;
+  background: #2c3456;
   color: white;
   z-index: -9;
 }
@@ -117,7 +117,7 @@ body {
 
   transform: translateX(-50%);
 
-  background: #ed1413;
+  background: #2c3456;
 }
 
 .container .card .slide.slide2 .content p {
