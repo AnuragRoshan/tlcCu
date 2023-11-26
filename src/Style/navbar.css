@@ -141,15 +141,15 @@
   .nav-item {
     text-align: center;
   }
-
-  .navbar {
-    /* background-color: transparent; */
-    /* display: none; */
-  }
 }
 
 @media (max-width: 535px) {
   .logo-2 {
     display: none;
+  }
+  .navbar {
+    /* background-color: transparent; */
+    /* display: none; */
+    width: 100%;
   }
 }

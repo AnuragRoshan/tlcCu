@@ -32,17 +32,20 @@ const HomePage = () => {
           <div className="text-over-red-desc">
             FACILITATING SUSTAINED PROFESSIONAL DEVELOPMENT
           </div>
-          <div style={{ width: "max-content" }}>
-            Teaching & <br />{" "}
+          <div className="text-over-below">
+            <div style={{ width: "max-content" }}>
+              Teaching & <br />{" "}
+            </div>
+            <span
+              className="text-over-red-below"
+              style={{ width: "max-content" }}
+            >
+              Learning Center
+            </span>
           </div>
-          <span
-            className="text-over-red-below"
-            style={{ width: "max-content" }}
-          >
-            Learning Center
-          </span>
         </h1>
       </div>
+
       <div>
         <Chancelormsg />
       </div>

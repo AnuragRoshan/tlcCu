@@ -91,9 +91,10 @@
 }
 
 .text-over-red {
-  width: max-content;
+  width: 40%;
   position: absolute;
   top: 40%;
+  /* right: 70%; */
   left: 30%;
   padding: 4rem;
   border-radius: 0 15rem 0 15rem;
@@ -121,27 +122,35 @@
   color: #e6e6e7;
 }
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 887px) {
   .text-over-red {
-    top: 20%; /* Adjust for smaller screens */
-    margin-left: 5rem;
-  }
-  .text-over-red-desc {
+    left: 11.5%;
+    padding: 2rem;
+    width: 75%;
     color: black;
-    /* font-size: 10rem; */
-    margin-top: 3rem;
+  }
+
+  /* .text-over-red-desc {
+    position: relative;
+    width: 90%;
+  } */
+  .text-over-below {
+    color: black;
+    position: relative;
+    left: 20%;
   }
   .text-over-red-below {
-    color: #2c3456;
+    color: black;
+    position: relative;
+    left: -27%;
   }
   .text-over-red-head {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 3.9rem;
-    color: #2c3456;
-    top: 11rem;
+    color: black;
+    top: 10%;
     text-align: center;
     position: relative;
-    width: 100%; /* Ensure the text takes up the full width */
     margin: 0 auto; /* Center the text horizontally */
   }
 
@@ -191,10 +200,33 @@
   .text-over-red-below {
     color: black; /* Change text color to black for smaller screens */
   }
+  .chm-info {
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: center; Vertically center the contents */
+  }
 }
 @media (max-width: 631px) {
-  .image-over-red,
-  .diagonal-div {
+  .text-over-red {
+    left: 11.5%;
+    padding: 2rem;
+    width: 75%;
+    color: black;
+  }
+
+  /* .text-over-red-desc {
+    position: relative;
+    width: 90%;
+  } */
+  .text-over-below {
+    color: black;
+    position: relative;
+    left: 20%;
+  }
+  .text-over-red-below {
+    color: black;
+    position: relative;
+    left: -27%;
   }
 }
 /* Add this part to your existing CSS */
@@ -210,6 +242,7 @@
 
 .chm-info {
   display: flex;
+  flex-direction: row;
   /* align-items: center; Vertically center the contents */
 }
 
@@ -255,6 +288,17 @@
   align-items: center; /* Vertically center the image */
   margin-top: 0rem;
   /* border: 1px solid grey; */
+}
+
+@media (max-width: 1279px) {
+  .chm-info {
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: center; Vertically center the contents */
+  }
+  .chm-msg {
+    border-radius: 0;
+  }
 }
 
 /* great teacher */
