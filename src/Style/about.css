@@ -58,4 +58,9 @@ li {
   .about-element {
     text-align: center;
   }
+  .about-top-inner {
+    display: flex;
+    flex-direction: column;
+    background-color: #2c3456a6;
+  }
 }

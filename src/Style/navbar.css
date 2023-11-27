@@ -88,7 +88,6 @@
   background-color: white;
   color: #2c3456;
 
-  border-radius: 0 0 1rem 1rem;
   padding: 0.49rem;
 }
 
@@ -107,7 +106,6 @@
   background-color: white;
   color: #2c3456;
   padding: 0.49rem;
-  border-radius: 0 0 1rem 1rem;
   /* color: black; */
 }
 
@@ -125,6 +123,7 @@
   position: absolute;
   top: 5rem;
   left: 0;
+  scroll-behavior: smooth;
   width: 100%;
   z-index: 1000;
   padding: 0;
@@ -140,9 +139,21 @@
   }
   .nav-item {
     text-align: center;
+
+    margin-block: 2rem;
   }
 }
 
+@media (max-width: 737px) {
+  .logo-2 {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .logo-3 {
+    display: none;
+  }
+}
 @media (max-width: 535px) {
   .logo-2 {
     display: none;
