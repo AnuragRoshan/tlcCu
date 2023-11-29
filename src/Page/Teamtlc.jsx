@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Sidemenu from "../Components/Sidemenu";
 import awards from "../Data/awards";
 import Flowbanner from "../Components/Flowbanner";
 
 const Teamtlc = () => {
-  const sections = ["Introduction", "Mission", "Vision", "Goals"];
+  // const sections = ["Introduction", "Mission", "Vision", "Goals"];
 
-  // const sections = Object.keys(awards);
-  const section = ["TLC Awards", "Research Grant"];
+  // // const sections = Object.keys(awards);
+  // const section = ["TLC Awards", "Research Grant"];
 
   const page = "Our Team";
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Flowbanner name={page} />

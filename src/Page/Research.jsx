@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Sidemenu from "../Components/Sidemenu";
 import research from "../Data/research";
 import Flowbanner from "../Components/Flowbanner";
@@ -16,6 +16,9 @@ const Research = () => {
     "Collaborate with Us",
   ];
   const page = "Research";
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Flowbanner name={page} />
@@ -23,6 +26,47 @@ const Research = () => {
         <div className="about-top-inner">
           <div style={{ flex: "2" }}>
             <Sidemenu menu={section} />
+            <div className="side-image">
+              <div
+                style={{
+                  marginBlockEnd: "1rem",
+                  height: "0%",
+                  borderRadius: "1rem 1rem  1rem 1rem ",
+                }}
+              >
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1676325102413-f60b77fc1566?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  srcset=""
+                  style={{
+                    width: "100%",
+                    // opacity: "0.8",
+                  }}
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1583912268183-a34d41fe464a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  srcset=""
+                  style={{
+                    width: "100%",
+                    // opacity: "0.8",
+                    marginBlockStart: "1rem",
+                    height: "max-content",
+                  }}
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1566996164994-cc20c015d305?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fFBoeXNpY3MlMjBSZXNlYXJjaHxlbnwwfDF8MHx8fDA%3D"
+                  alt=""
+                  srcset=""
+                  style={{
+                    width: "100%",
+                    // opacity: "0.8",
+                    marginBlockStart: "1rem",
+                    height: "max-content",
+                  }}
+                />
+              </div>
+            </div>
           </div>
           <div className="about-main-top">
             <div className="about-main-inner">

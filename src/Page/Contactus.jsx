@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Flowbanner from "../Components/Flowbanner";
 
 const Contactus = () => {
   const page = "Contact Us";
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Flowbanner name={page} />

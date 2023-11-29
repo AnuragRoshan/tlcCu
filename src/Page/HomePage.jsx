@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Style/home.css";
 import Chancelormsg from "../Components/Homepage/Chancelormsg";
 import Greatteacher from "../Components/Homepage/Greatteacher";
@@ -6,6 +6,9 @@ import Teacherlearning from "../Components/Homepage/Teacherlearning";
 import Map from "../Components/Homepage/Map";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="home-top">

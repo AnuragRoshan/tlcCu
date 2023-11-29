@@ -1,5 +1,6 @@
 import React from "react";
 import "../Style/footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -34,6 +35,147 @@ const Footer = () => {
       <div
         style={{
           display: "flex",
+          backgroundColor: "#2c3456",
+          flexWrap: "center",
+          textAlign: "left",
+          flexDirection: "row",
+          paddingInline: "2rem",
+          paddingBlock: "1rem",
+        }}
+      >
+        <div style={{ flex: "2", lineHeight: "3rem" }}>
+          <div style={{ flex: "1", color: "white", cursor: "pointer" }}>
+            <Link to="/about">About Us</Link>
+          </div>
+
+          <div
+            style={{
+              color: "white",
+            }}
+          >
+            <Link to="/course">Courses</Link>
+          </div>
+          <div
+            style={{
+              flex: "1",
+              color: "white",
+            }}
+          >
+            <Link to="/research">Research</Link>
+          </div>
+          <div
+            style={{
+              flex: "1",
+              color: "white",
+            }}
+          >
+            <Link to="/events">Events</Link>
+          </div>
+        </div>
+        {/* <div
+        style={{
+          display: "flex",
+          backgroundColor: "#2c3456",
+          display: "flex",
+          textAlign: "left",
+          flexDirection: "column",
+          paddingInline: "2rem",
+          paddingBlock: "1rem",
+        }}
+      > */}
+        <div style={{ flex: "2", lineHeight: "3rem" }}>
+          <div
+            style={{
+              flex: "1",
+              color: "white",
+            }}
+          >
+            <Link to="/awards">Awards</Link>
+          </div>
+          <div
+            style={{
+              flex: "1",
+              color: "white",
+            }}
+          >
+            <Link to="/journal">Journal</Link>
+          </div>
+          <div
+            style={{
+              flex: "1",
+              color: "white",
+            }}
+          >
+            <Link to="/contact">Contact Us</Link>
+            {/* </div> */}
+          </div>
+        </div>
+        <div style={{ flex: "3", display: "flex", flexWrap: "wrap" }}>
+          <div style={{ flex: "1" }}>
+            <span
+              className="material-symbols-outlined"
+              style={{
+                padding: "1rem",
+                fontSize: "2.5rem",
+                color: "white",
+                borderRadius: "1rem",
+                cursor: "pointer",
+              }}
+            >
+              phone_in_talk
+            </span>
+          </div>
+          <div style={{ flex: "1" }}>
+            <span
+              className="material-symbols-outlined"
+              style={{
+                padding: "1rem",
+                fontSize: "2.5rem",
+                color: "white",
+                borderRadius: "1rem",
+                cursor: "pointer",
+              }}
+            >
+              pin_drop
+            </span>
+          </div>
+          {/* <div style={{ flex: "1", paddingBlock: "1rem" }}> */}
+          <div style={{ flex: "1" }}>
+            <span
+              style={{
+                padding: "1rem",
+                color: "white",
+                borderRadius: "1rem",
+                cursor: "pointer",
+                fontSize: "2.5rem",
+              }}
+              className="material-symbols-outlined"
+            >
+              mail
+            </span>
+          </div>
+          {/* <div style={{ flex: "1", paddingBlock: "1rem" }}> */}
+          <div style={{ flex: "1" }}>
+            <span
+              style={{
+                padding: "1rem",
+                // backgroundColor: "white",
+                color: "white",
+                borderRadius: "1rem",
+                fontSize: "2.5rem",
+                cursor: "pointer",
+              }}
+              className="material-symbols-outlined"
+            >
+              play_circle
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
           flexWrap: "wrap",
           flexDirection: "row-reverse",
         }}
@@ -47,75 +189,15 @@ const Footer = () => {
           at India's Best Private University in Punjab, Chandigarh which
           provides top placements.
         </div>
-        <div
-          style={{
-            flex: "3",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "center",
-            backgroundColor: "#2c3456",
-            color: "white",
-          }}
-        >
-          <div style={{ flex: "1", paddingBlock: "1rem" }}>
-            <span
-              className="material-symbols-outlined"
-              style={{
-                padding: "1rem",
-                backgroundColor: "white",
-                color: "black",
-                borderRadius: "1rem",
-                cursor: "pointer",
-              }}
-            >
-              phone_in_talk
-            </span>
-          </div>
-          <div style={{ flex: "1", paddingBlock: "1rem" }}>
-            <span
-              className="material-symbols-outlined"
-              style={{
-                padding: "1rem",
-                backgroundColor: "white",
-                color: "black",
-                borderRadius: "1rem",
-                cursor: "pointer",
-              }}
-            >
-              pin_drop
-            </span>
-          </div>
-          <div style={{ flex: "1", paddingBlock: "1rem" }}>
-            <span
-              style={{
-                padding: "1rem",
-                backgroundColor: "white",
-                color: "black",
-                borderRadius: "1rem",
-                cursor: "pointer",
-              }}
-              className="material-symbols-outlined"
-            >
-              mail
-            </span>
-          </div>
-          <div style={{ flex: "1", paddingBlock: "1rem" }}>
-            <span
-              style={{
-                padding: "1rem",
-                backgroundColor: "white",
-                color: "black",
-                borderRadius: "1rem",
-                cursor: "pointer",
-              }}
-              className="material-symbols-outlined"
-            >
-              play_circle
-            </span>
-          </div>
-        </div>
       </div>
+      {/* <div
+        style={{
+          height: "max-content",
+          borderRadius: "1px solid white",
+        }}
+      >
+        
+      </div> */}
     </div>
   );
 };

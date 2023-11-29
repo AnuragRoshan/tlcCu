@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Cardhover from "../Components/Cardhover";
 import "../Style/events.css";
 import { upcoming, past } from "../Data/events";
@@ -6,6 +6,9 @@ import Flowbanner from "../Components/Flowbanner";
 
 const Events = () => {
   const page = "Events";
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Flowbanner name={page} />

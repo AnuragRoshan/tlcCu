@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import teachingData from "../Data/teaching.js"; // Import your teaching data
 import "../Style/about.css"; // Add CSS styling for the teaching component
-import Sidemenu from "../Components/Sidemenu";
+// import Sidemenu from "../Components/Sidemenu";
 import Flowbanner from "../Components/Flowbanner";
 
+// useEffect(() => {
+//   window.scrollTo(0, 0);
+// }, []);
 class Teaching extends Component {
   render() {
     const sections = Object.keys(teachingData);
     const page = "Teaching"; // Set the page title
-
     return (
       <>
         <Flowbanner name={page} />

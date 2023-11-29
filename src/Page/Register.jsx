@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Style/form.css"; // Make sure to adjust the path to your CSS file
 import Flowbanner from "../Components/Flowbanner";
 import { ToastContainer, toast } from "react-toastify";
@@ -127,6 +127,10 @@ const Register = () => {
   };
 
   const page = "Register";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Flowbanner name={page} />
