@@ -40,6 +40,67 @@ class Teaching extends Component {
                   </div>
                 </div>
               </div>
+              <div className="side-image">
+                <div
+                  style={{
+                    marginBlockEnd: "1rem",
+                    height: "0%",
+                    borderRadius: "1rem 1rem  1rem 1rem ",
+                  }}
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1524758870432-af57e54afa26?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhaW5pbmclMjBidXNpbmVzc3xlbnwwfDF8MHx8fDI%3D"
+                    alt=""
+                    srcset=""
+                    style={{
+                      width: "100%",
+                      borderInlineEnd: "10px solid #2c3456",
+                      borderBlockStart: "10px solid #2c3456",
+                      // opacity: "0.8",
+                    }}
+                  />
+
+                  <img
+                    src="https://images.unsplash.com/photo-1507537417841-81e85feb9bd2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHRyYWluaW5nJTIwYnVzaW5lc3N8ZW58MHwxfDB8fHwy"
+                    alt=""
+                    srcset=""
+                    style={{
+                      width: "100%",
+                      // opacity: "0.8",
+                      marginBlockStart: "1rem",
+                      height: "max-content",
+                      borderInlineEnd: "10px solid #2c3456",
+                      borderBlockStart: "10px solid #2c3456",
+                    }}
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1552664688-cf412ec27db2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dHJhaW5pbmclMjBidXNpbmVzc3xlbnwwfDF8MHx8fDI%3D"
+                    alt=""
+                    srcset=""
+                    style={{
+                      width: "100%",
+                      // opacity: "0.8",
+                      marginBlockStart: "1rem",
+                      height: "max-content",
+                      borderInlineEnd: "10px solid #2c3456",
+                      borderBlockStart: "10px solid #2c3456",
+                    }}
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYWluaW5nJTIwYnVzaW5lc3N8ZW58MHwxfDB8fHwy"
+                    alt=""
+                    srcset=""
+                    style={{
+                      width: "100%",
+                      // opacity: "0.8",
+                      marginBlockStart: "1rem",
+                      height: "max-content",
+                      borderInlineEnd: "10px solid #2c3456",
+                      borderBlockStart: "10px solid #2c3456",
+                    }}
+                  />
+                </div>
+              </div>
             </div>
             <div className="about-main-top">
               <div className="about-main-inner">

@@ -35,10 +35,10 @@ const About = () => {
             <div className="side-image">
               <div
                 style={{
-                  backgroundColor: "#2c3456",
                   marginBlockEnd: "1rem",
                   height: "30%",
-                  borderRadius: "1rem 1rem  1rem 1rem ",
+                  borderInlineEnd: "10px solid #2c3456",
+                  borderBlockStart: "10px solid #2c3456",
                 }}
               >
                 <img
@@ -47,8 +47,6 @@ const About = () => {
                   srcset=""
                   style={{
                     width: "100%",
-                    // opacity: "0.7",]
-                    // borderRadius: "6rem 0  0 6rem ",
                   }}
                 />
               </div>

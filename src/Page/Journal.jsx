@@ -41,6 +41,8 @@ const Journal = () => {
                   srcset=""
                   style={{
                     width: "100%",
+                    borderInlineEnd: "10px solid #2c3456",
+                    borderBlockStart: "10px solid #2c3456",
                     // borderRadius: "6rem 0  0 6rem ",
                   }}
                 />
@@ -52,6 +54,8 @@ const Journal = () => {
                     width: "100%",
                     // opacity: "0.7",
                     marginBlockStart: "1rem",
+                    borderInlineEnd: "10px solid #2c3456",
+                    borderBlockStart: "10px solid #2c3456",
                     // borderRadius: "6rem 0  0 6rem ",
                   }}
                 />

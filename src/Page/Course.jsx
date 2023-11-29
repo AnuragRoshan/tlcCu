@@ -42,6 +42,8 @@ const Course = () => {
                     width: "100%",
                     // borderRadius: "1rem 1rem  1rem 1rem ",
                     height: "20rem",
+                    borderInlineEnd: "10px solid #2c3456",
+                    borderBlockStart: "10px solid #2c3456",
                     // borderRadius: "6rem 0  0 6rem ",
                   }}
                 />
@@ -53,6 +55,8 @@ const Course = () => {
                     width: "100%",
                     // borderRadius: "1rem 1rem  1rem 1rem ",
                     marginBlockStart: "1rem",
+                    borderInlineEnd: "10px solid #2c3456",
+                    borderBlockStart: "10px solid #2c3456",
                     // borderRadius: "6rem 0  0 6rem ",
                   }}
                 />

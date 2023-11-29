@@ -110,7 +110,14 @@ const Footer = () => {
             {/* </div> */}
           </div>
         </div>
-        <div style={{ flex: "3", display: "flex", flexWrap: "wrap" }}>
+        <div
+          style={{
+            flex: "3",
+            display: "flex",
+            flexWrap: "wrap",
+            textAlign: "center",
+          }}
+        >
           <div style={{ flex: "1" }}>
             <span
               className="material-symbols-outlined"

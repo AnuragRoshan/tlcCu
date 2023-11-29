@@ -59,7 +59,12 @@ const Contactus = () => {
                 </div>
                 <div>
                   <div className="about-head">Email</div>
-                  <div className="about-desc">ed.tlc@cumail.in</div>
+                  <div className="about-desc">
+                    {" "}
+                    <a href="mailto:ed.tlc@cumail.in" style={{ color: "blue" }}>
+                      ed.tlc@cumail.in
+                    </a>
+                  </div>
                 </div>
               </div>
               <div
