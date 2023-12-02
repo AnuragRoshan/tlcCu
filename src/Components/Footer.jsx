@@ -127,6 +127,7 @@ const Footer = () => {
                 color: "white",
                 borderRadius: "1rem",
                 cursor: "pointer",
+                boxShadow: "0px 0px 14px -6px rgba(0,0,0,0.75)",
               }}
             >
               phone_in_talk
@@ -141,6 +142,7 @@ const Footer = () => {
                 color: "white",
                 borderRadius: "1rem",
                 cursor: "pointer",
+                boxShadow: "0px 0px 14px -6px rgba(0,0,0,0.75)",
               }}
             >
               pin_drop
@@ -155,6 +157,7 @@ const Footer = () => {
                 borderRadius: "1rem",
                 cursor: "pointer",
                 fontSize: "2.5rem",
+                boxShadow: "0px 0px 14px -6px rgba(0,0,0,0.75)",
               }}
               className="material-symbols-outlined"
             >
@@ -171,6 +174,7 @@ const Footer = () => {
                 borderRadius: "1rem",
                 fontSize: "2.5rem",
                 cursor: "pointer",
+                boxShadow: "0px 0px 14px -6px rgba(0,0,0,0.75)",
               }}
               className="material-symbols-outlined"
             >

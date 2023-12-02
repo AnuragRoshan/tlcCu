@@ -12,6 +12,32 @@
 .
 .
  */
+section {
+  transition: transform 1.2s ease-out;
+}
+
+.sec-2 {
+  transform: translateY(80%);
+}
+
+.sec-2.show-animate {
+  transform: translateY(0);
+}
+.sec-3 {
+  transform: translateY(80%);
+}
+
+.sec-3.show-animate {
+  transform: translateY(0);
+}
+.sec-4 {
+  transform: translateY(80%);
+}
+
+.sec-4.show-animate {
+  transform: translateY(0);
+}
+
 .home-top {
   display: flex;
   justify-content: center;
