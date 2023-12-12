@@ -37,8 +37,6 @@ const About = () => {
                 style={{
                   marginBlockEnd: "1rem",
                   height: "30%",
-                  borderInlineEnd: "10px solid #2c3456",
-                  borderBlockStart: "10px solid #2c3456",
                 }}
               >
                 <img
@@ -46,6 +44,8 @@ const About = () => {
                   alt=""
                   srcset=""
                   style={{
+                    borderInlineEnd: "10px solid #2c3456",
+                    borderBlockStart: "10px solid #2c3456",
                     width: "100%",
                   }}
                 />

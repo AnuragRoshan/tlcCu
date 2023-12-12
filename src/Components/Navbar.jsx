@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom"; // Import useLocation from
 import "../Style/navbar.css";
 // import Banner from "../Components/Banner";
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1338);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation(); // Get the current location
@@ -13,19 +13,11 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      // window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
     };
   }, []);
@@ -56,7 +48,7 @@ const Navbar = () => {
             style={{ position: "absolute", top: "-1rem", right: "-1rem" }}
             className={`icon ${menuOpen ? "open" : ""}`}
           >
-            <div>
+            <div style={{ backgroundColor: "transparent" }}>
               <span
                 class="material-symbols-outlined"
                 style={{ color: "white" }}
