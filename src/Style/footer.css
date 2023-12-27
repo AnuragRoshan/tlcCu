@@ -5,14 +5,23 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #2c3456;
+  /* background-color: #2c3456; */
   color: white;
+}
+
+.material-symbols-outlined {
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  box-shadow: 0px 0px 14px -6px rgba(67, 66, 66, 0.75);
 }
 
 .foot-top {
   /* margin: 4rem; */
   color: black;
-  /* background-color: #a1fd0d; */
+  background-color: rgb(17, 17, 17);
 }
 
 .footer img {
@@ -58,14 +67,17 @@
 
 a {
   text-decoration: none;
-  color: #a1fd0d;
+  color: grey;
+}
+
+a:hover {
+  color: rgb(176, 176, 176);
 }
 
 .foot-desc {
   text-align: center;
   font-size: 0.7rem;
   padding-inline: 1rem;
-  background-color: #2c3456;
   padding-block-end: 1rem;
   color: white;
 }

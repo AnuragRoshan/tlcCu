@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center; /* Vertically center elements */
-  justify-content: center; /* Horizontally center elements */
+  align-items: center;
+  justify-content: center;
 }
 
 .events-head {

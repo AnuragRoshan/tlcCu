@@ -35,7 +35,7 @@ const Footer = () => {
       <div
         style={{
           display: "flex",
-          backgroundColor: "#2c3456",
+          // backgroundColor: "#2c3456",
           flexWrap: "center",
           textAlign: "left",
           flexDirection: "row",
@@ -119,67 +119,18 @@ const Footer = () => {
           }}
         >
           <div style={{ flex: "1" }}>
-            <span
-              className="material-symbols-outlined"
-              style={{
-                padding: "1rem",
-                fontSize: "2.5rem",
-                color: "white",
-                borderRadius: "1rem",
-                cursor: "pointer",
-                boxShadow: "0px 0px 14px -6px rgba(0,0,0,0.75)",
-              }}
-            >
-              phone_in_talk
-            </span>
+            <span className="material-symbols-outlined">phone_in_talk</span>
           </div>
           <div style={{ flex: "1" }}>
-            <span
-              className="material-symbols-outlined"
-              style={{
-                padding: "1rem",
-                fontSize: "2.5rem",
-                color: "white",
-                borderRadius: "1rem",
-                cursor: "pointer",
-                boxShadow: "0px 0px 14px -6px rgba(0,0,0,0.75)",
-              }}
-            >
-              pin_drop
-            </span>
+            <span className="material-symbols-outlined">pin_drop</span>
           </div>
           {/* <div style={{ flex: "1", paddingBlock: "1rem" }}> */}
           <div style={{ flex: "1" }}>
-            <span
-              style={{
-                padding: "1rem",
-                color: "white",
-                borderRadius: "1rem",
-                cursor: "pointer",
-                fontSize: "2.5rem",
-                boxShadow: "0px 0px 14px -6px rgba(0,0,0,0.75)",
-              }}
-              className="material-symbols-outlined"
-            >
-              mail
-            </span>
+            <span className="material-symbols-outlined">mail</span>
           </div>
           {/* <div style={{ flex: "1", paddingBlock: "1rem" }}> */}
           <div style={{ flex: "1" }}>
-            <span
-              style={{
-                padding: "1rem",
-                // backgroundColor: "white",
-                color: "white",
-                borderRadius: "1rem",
-                fontSize: "2.5rem",
-                cursor: "pointer",
-                boxShadow: "0px 0px 14px -6px rgba(0,0,0,0.75)",
-              }}
-              className="material-symbols-outlined"
-            >
-              play_circle
-            </span>
+            <span className="material-symbols-outlined">play_circle</span>
           </div>
         </div>
       </div>

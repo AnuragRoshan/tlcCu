@@ -1,14 +1,15 @@
 .flow-banner {
   font-family: Montserrat;
   /* position: relative; */
-  height: 6rem; /* Set the height as needed */
+  height: 45vh; /* Set the height as needed */
   background-image: url("https://i0.wp.com/www.opindia.com/wp-content/uploads/2022/06/chandigarh.jpg?w=700&ssl=1");
   background-size: 50%; /* You can adjust the percentage as needed to zoom out the image */
   background-position: right;
   color: #fff; /* Text color */
-  position: fixed;
+  /* position: fixed; */
   /* width: 100%; */
-  top: 9rem;
+  /* top: 9rem; */
+  margin-top: 1rem;
 }
 
 .gradient {
@@ -29,10 +30,14 @@
   position: relative;
   z-index: 1;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  height: 100%;
 }
 
 .breadcrumbs {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 h1 {

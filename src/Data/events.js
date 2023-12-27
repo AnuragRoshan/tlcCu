@@ -18,7 +18,7 @@ export const past = [
     {
         head: "Faculty Development Programme",
         title: "Past Events 2023 ",
-        date: " 27 Jan.,2023-02 Feb.,2023",
+        date: " 27 Jan,2023-02 Feb,2023",
         desc: "Faculty Development Programme on ‘Universal Human Values’"
     },
     {

@@ -10,29 +10,23 @@ const Cardhover = (props) => {
         <div className="card">
           <div className="slide slide1">
             <div className="content">
-              <div className="icon">
+              <div
+                className="icon"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
                 <div
                   style={{
-                    textAlign: "center",
-                    marginBlockStart: "4rem",
-                    fontSize: "1.4rem",
-                    textDecoration: "underline",
-                    // position: "absolute",
+                    width: "max-content",
+                    backgroundColor: "transparent",
                   }}
                 >
                   {head}
                 </div>
-                <div
-                  style={{
-                    textAlign: "center",
-                    top: "8 rem",
-                    // paddingBlockStart: "1rem",
-                    marginBlockEnd: "2rem",
-                    // position: "absolute",
-                  }}
-                >
-                  {title}
-                </div>
+                {/* <div>{title}</div> */}
               </div>
             </div>
           </div>
@@ -47,7 +41,9 @@ const Cardhover = (props) => {
                 }}
               >
                 <div>
-                  <i className="material-symbols-outlined">calendar_month</i>
+                  <i className="material-symbols-outlined calendar-ico">
+                    calendar_month
+                  </i>
                 </div>
                 <div style={{ fontSize: "1rem" }}>{date}</div>
               </div>

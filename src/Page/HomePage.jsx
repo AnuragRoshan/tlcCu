@@ -50,8 +50,10 @@ const HomePage = () => {
             FACILITATING SUSTAINED PROFESSIONAL DEVELOPMENT
           </div>
           <div className="banner-head">
-            <span> Teaching & </span>
-            <div style={{ color: "white" }}> Learning Center</div>
+            <div style={{ color: "white" }}>
+              Teaching & <br />
+              Learning Center
+            </div>
           </div>
         </div>
       </section>
