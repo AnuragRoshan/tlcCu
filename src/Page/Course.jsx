@@ -35,19 +35,6 @@ const Course = () => {
                 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1555967522-37949fc21dcb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  srcset=""
-                  style={{
-                    width: "100%",
-                    // borderRadius: "1rem 1rem  1rem 1rem ",
-                    height: "20rem",
-                    borderInlineEnd: "10px solid #2c3456",
-                    borderBlockStart: "10px solid #2c3456",
-                    // borderRadius: "6rem 0  0 6rem ",
-                  }}
-                />
-                <img
                   src="https://images.unsplash.com/photo-1514466256797-efd55fa1bf4e?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
                   srcset=""

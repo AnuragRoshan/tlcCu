@@ -119,18 +119,29 @@ const Footer = () => {
           }}
         >
           <div style={{ flex: "1" }}>
-            <span className="material-symbols-outlined">phone_in_talk</span>
+            <a href="tel:+70874-59999" style={{ color: "blue" }}>
+              <span className="material-symbols-outlined">phone_in_talk</span>
+            </a>
           </div>
           <div style={{ flex: "1" }}>
             <span className="material-symbols-outlined">pin_drop</span>
           </div>
           {/* <div style={{ flex: "1", paddingBlock: "1rem" }}> */}
           <div style={{ flex: "1" }}>
-            <span className="material-symbols-outlined">mail</span>
+            <a href="mailto:ed.tlc@cumail.in" style={{ color: "blue" }}>
+              <span className="material-symbols-outlined">mail</span>
+            </a>
           </div>
           {/* <div style={{ flex: "1", paddingBlock: "1rem" }}> */}
           <div style={{ flex: "1" }}>
-            <span className="material-symbols-outlined">play_circle</span>
+            <a
+              href="https://www.youtube.com/@cuteachinglearningcentre4832"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "blue" }}
+            >
+              <span className="material-symbols-outlined">play_circle</span>
+            </a>
           </div>
         </div>
       </div>

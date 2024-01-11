@@ -15,7 +15,10 @@ const Contactus = () => {
             <div className="about-main-inner">
               <div
                 className="about-element"
-                style={{ display: "flex", width: "70%" }}
+                style={{
+                  display: "flex",
+                  width: "70%",
+                }}
               >
                 <div>
                   <span
@@ -26,6 +29,7 @@ const Contactus = () => {
                       padding: "0.4rem",
                       marginInline: "0.5rem",
                       marginBlockStart: "20%",
+                      backgroundColor: "#2c3456",
                     }}
                   >
                     home
@@ -46,12 +50,13 @@ const Contactus = () => {
               >
                 <div>
                   <span
-                    class="material-symbols-outlined"
+                    className="material-symbols-outlined"
                     style={{
                       fontSize: "2rem",
                       borderRadius: "50%",
                       padding: "0.4rem",
                       marginInline: "0.5rem",
+                      backgroundColor: "#2c3456",
                     }}
                   >
                     mail
@@ -78,6 +83,7 @@ const Contactus = () => {
                       fontSize: "2rem",
                       borderRadius: "50%",
                       padding: "0.4rem",
+                      backgroundColor: "#2c3456",
                       marginInline: "0.5rem",
                     }}
                   >
@@ -107,6 +113,7 @@ const Contactus = () => {
                       borderRadius: "50%",
                       padding: "0.4rem",
                       marginInline: "0.5rem",
+                      backgroundColor: "#2c3456",
                     }}
                   >
                     video_library
